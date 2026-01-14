@@ -1,9 +1,6 @@
 site_name: The Bamboo Filing Cabinet
 site_url: https://bamboo-filing-cabinet.github.io/
 
-nav:
-  - Home: index.md
-
 theme:
   name: material
 
