@@ -15,3 +15,4 @@ We publish datasets + metadata with an emphasis on:
 - 📚 [Catalog](./catalog/README.md)
 - ✅ [Standards](./standards/README.md)
 - 🤝 [Contribute / Corrections](./contribute-corrections/README.md)
+- 📝 Anonymous corrections/questions/suggestions: https://forms.gle/UaPUdJZ5SGrTKdr2A
