@@ -5,6 +5,11 @@
 - Data we publish (original/derived and permitted): CC-BY.
 - Documentation: CC-BY (unless stated otherwise).
 
+## License templates
+- Use these templates when adding LICENSE files to new repos.
+- Apache-2.0 text: [licenses/apache-2.0.txt](licenses/apache-2.0.txt) (canonical: https://www.apache.org/licenses/LICENSE-2.0)
+- CC-BY 4.0 legal code: [licenses/cc-by-4.0.txt](licenses/cc-by-4.0.txt) (canonical: https://creativecommons.org/licenses/by/4.0/legalcode)
+
 ## General rules
 - Always include a license for code (Apache-2.0 is the default).
 - Do NOT claim a license the source does not grant.
