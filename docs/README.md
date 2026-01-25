@@ -16,3 +16,7 @@ We publish datasets + metadata with an emphasis on:
 - ✅ [Standards](./standards/README.md)
 - 🤝 [Contribute / Corrections](./contribute-corrections/README.md)
 - 📝 Anonymous corrections/questions/suggestions: https://forms.gle/UaPUdJZ5SGrTKdr2A
+
+## Licensing
+Docs content is licensed CC-BY 4.0 unless stated otherwise. See the
+[Licensing guide](./standards/licensing-guide.md).
