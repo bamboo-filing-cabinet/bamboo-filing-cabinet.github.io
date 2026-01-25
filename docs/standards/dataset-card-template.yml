@@ -1,0 +1,46 @@
+schema_version: 1
+name: "Dataset Name"
+dataset_id: "dataset-slug"
+cycle_id: "cycle-id"
+status: "draft"
+coverage:
+  geography: "Country or region"
+  time_start: "YYYY-MM-DD"
+  time_end: "YYYY-MM-DD"
+sources:
+  - id: "source-id"
+    title: "Source title"
+    url: "https://example.com/source"
+    source_type: "webpage|pdf|docx|dataset|api"
+    retrieved_at: "YYYY-MM-DD"
+    published_date: "YYYY-MM-DD"
+    terms_status: "UNKNOWN"
+    terms_url: "https://example.com/terms"
+    notes: "Optional notes about the source or extraction."
+license:
+  data: "CC-BY-4.0"
+  code: "Apache-2.0"
+  source_caveat: "Underlying sources are third-party materials; terms may be unclear."
+transformations:
+  - step: "raw -> staging"
+    description: "Ingest raw files into staging DB."
+    inputs:
+      - "data/raw/source-file.ext"
+    outputs:
+      - "data/staging.db"
+    script: "data/<cycle>/build-staging-db.py"
+  - step: "staging -> exports"
+    description: "Export JSON for the site."
+    inputs:
+      - "data/staging.db"
+    outputs:
+      - "public/data/<cycle>/"
+    script: "data/<cycle>/export-json.py"
+outputs:
+  - path: "public/data/<cycle>/documents.json"
+    description: "Source document registry."
+known_gaps:
+  - "Describe known gaps or TBD items."
+attribution:
+  suggested: "Dataset by Bamboo Filing Cabinet, retrieved YYYY-MM-DD, https://bamboo-filing-cabinet.github.io/<site>/"
+notes: "Optional narrative context."
