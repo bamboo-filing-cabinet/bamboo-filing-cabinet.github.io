@@ -9,13 +9,17 @@ coverage:
   time_end: "YYYY-MM-DD"
 sources:
   - id: "source-id"
+    document_id: "doc-xxxxxxxxxxxx"
+    cycle_id: "cycle-id"
     title: "Source title"
     url: "https://example.com/source"
     source_type: "webpage|pdf|docx|dataset|api"
     retrieved_at: "YYYY-MM-DD"
     published_date: "YYYY-MM-DD"
     terms_status: "UNKNOWN"
+    terms_checked_at: "YYYY-MM-DD"
     terms_url: "https://example.com/terms"
+    terms_notes: "Optional notes about terms status."
     notes: "Optional notes about the source or extraction."
 license:
   data: "CC-BY-4.0"
